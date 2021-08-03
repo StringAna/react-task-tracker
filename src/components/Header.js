@@ -4,17 +4,19 @@ import PropTypes from "prop-types";
 const Header = ({ title }) => {
   return (
     <header>
-      <h1>{title}</h1>
+      <h1 style={HeadingStyle}>{title}</h1>
     </header>
   );
 };
+
+const HeadingStyle = { color: "cyan", backgroundColor: "black" };
 
 Header.defaultProps = {
   title: "Task Tracker",
 };
 
 Header.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 export default Header;

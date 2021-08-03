@@ -5,7 +5,7 @@ import Header from "./components/Header";
 function App() {
   return (
     <div className="Container">
-      <Header title={12} />
+      <Header title="Task Tracker" />
     </div>
   );
 }
