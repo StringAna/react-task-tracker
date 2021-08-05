@@ -4,12 +4,13 @@ import PropTypes from "prop-types";
 const Header = ({ title }) => {
   return (
     <header>
-      <h1 style={HeadingStyle}>{title}</h1>
+      <h1>{title}</h1>
     </header>
   );
 };
 
-const HeadingStyle = { color: "cyan", backgroundColor: "black" };
+//CSS in JS
+// const HeadingStyle = { color: "cyan", backgroundColor: "black" };
 
 Header.defaultProps = {
   title: "Task Tracker",
