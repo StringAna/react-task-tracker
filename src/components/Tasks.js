@@ -1,3 +1,5 @@
+import Task from "./Task";
+
 const Tasks = ({ tasks }) => {
   return (
     <div>
@@ -5,7 +7,7 @@ const Tasks = ({ tasks }) => {
       map takes in a function,
       for each task,return text of the task. */}
       {tasks.map((task) => (
-        <h3 key={task.id}>{task.text}</h3>
+        <Task key={task.id} task={task} />
       ))}
     </div>
   );
