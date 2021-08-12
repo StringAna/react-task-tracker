@@ -25,7 +25,7 @@ const Tasks = () => {
       map takes in a function,
       for each task,return text of the task. */}
       {tasks.map((task) => (
-        <h3>{task.text}</h3>
+        <h3 key={task.id}>{task.text}</h3>
       ))}
     </div>
   );
