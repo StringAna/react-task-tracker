@@ -25,10 +25,15 @@ function App() {
       reminder: false,
     },
   ]);
+
+  const deleteTasks = (id) => {
+    console.log("delete", id);
+  };
+
   return (
     <div className="container">
       <Header title="Task Tracker" />
-      <Tasks tasks={tasks} />
+      <Tasks tasks={tasks} onDelete={deleteTasks} />
     </div>
   );
 }
