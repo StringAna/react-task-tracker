@@ -51,7 +51,10 @@ function App() {
 
   return (
     <div className="container">
-      <Header onAdd={() => setShowAddTask(!showAddTask)} />
+      <Header
+        onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
+      />
       {/* if showaddtask is true, then show the component AddTask */}
       {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? (
